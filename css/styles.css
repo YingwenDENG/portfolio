@@ -258,6 +258,10 @@ footer {
     background: #f2f2f5
 }
 
+.urban-trace {
+    background: url("../images/schloss_schonbrunn_Wien_2014.jpg");
+}
+
 #lead {
     position: relative;
     height: 100vh;
@@ -338,6 +342,38 @@ footer {
     padding-top: 5px
 }
 
+#lead2 {
+    position: relative;
+    height: 60vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden
+}
+
+#lead2-content h1, #lead2-content h2 {
+    margin: 0
+}
+
+#lead2-content {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+#lead2-content h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3em;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    line-height: 1.2em
+}
+
 @keyframes pulsate {
     0% {
         transform: scale(1, 1)
@@ -363,6 +399,30 @@ footer {
     color: #74808a;
     margin: 0
 }
+
+.myproject {
+    padding: 75px 15px;
+    border-bottom: 1px solid #dcd9d9
+}
+
+.myproject h2 {
+    color: #374054
+}
+
+.myproject ul {
+    list-style-position: outside;
+}
+
+.myproject p, li {
+    color: #74808a;
+    margin: 0;
+    text-align: justify;
+}
+
+#urban-traces {
+
+}
+
 
 #experience {
     padding: 50px 15px;
@@ -744,7 +804,6 @@ footer {
     #lead {
         height: auto;
         min-height: auto;
-        max-height: auto;
         padding: 100px 15px
     }
 
