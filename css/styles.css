@@ -260,14 +260,18 @@ footer {
 
 .urban-trace {
     background: url("../images/schloss_schonbrunn_Wien_2014.jpg");
+    height: 60vh;
+}
+
+.main-page {
+    background: url("../images/maps-changed-world-cholera.jpg");
+    height: 100vh;
 }
 
 #lead {
     position: relative;
-    height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/maps-changed-world-cholera.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden
@@ -342,16 +346,6 @@ footer {
     padding-top: 5px
 }
 
-#lead2 {
-    position: relative;
-    height: 60vh;
-    min-height: 500px;
-    max-height: 1080px;
-    background-size: cover;
-    padding: 15px;
-    overflow: hidden
-}
-
 #lead2-content h1, #lead2-content h2 {
     margin: 0
 }
@@ -417,10 +411,7 @@ footer {
     color: #74808a;
     margin: 0;
     text-align: justify;
-}
-
-#urban-traces {
-
+    font-size: 1.2em;
 }
 
 
@@ -619,7 +610,25 @@ footer {
 .project-info p {
     color: #74808a;
     margin: 0 0 15px 0;
-    font-size: 0.9em
+    font-size: 0.9em;
+    text-align: justify
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center
+}
+
+figure {
+    display: inline-block;
+}
+
+figcaption {
+    margin: 20px 0 0 0;
+    font-weight: bold;
 }
 
 .no-image .project-info {
@@ -738,7 +747,7 @@ footer {
 .optional-section {
     padding: 50px 15px;
     text-align: center;
-    border-top: 1px solid #dcd9d9
+    border-top: none
 }
 
 .optional-section h2 {
@@ -746,18 +755,19 @@ footer {
 }
 
 .optional-section-block {
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid #dcd9d9;
+    border: none;
     background: #fff;
-    text-align: left
+    text-align: justify;
 }
 
 .optional-section-block h3 {
     font-weight: 500;
     margin: 0 0 15px 0;
-    color: #374054
+    color: #374054;
+    font-size: 1.3em
 }
 
 .optional-section-block h4 {
@@ -770,7 +780,7 @@ footer {
 .optional-section-block p, .optional-section-block ul {
     margin: 0 0 15px 0;
     color: #74808a;
-    font-size: 0.9em
+    font-size: 1.2em;
 }
 
 .optional-section-block ul {
@@ -807,14 +817,14 @@ footer {
         padding: 100px 15px
     }
 
-    #lead-content {
+    #lead-content, #lead2-content {
         position: relative;
         transform: none;
         left: auto;
         top: auto
     }
 
-    #lead-content h1 {
+    #lead-content h1, #lead2-content h1 {
         font-size: 3em
     }
 
@@ -858,7 +868,7 @@ footer {
         margin-bottom: 10px
     }
 
-    #lead-content h1 {
+    #lead-content h1, #lead2-content h1 {
         font-size: 2em
     }
 
@@ -900,7 +910,7 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-    #lead-content h1 {
+    #lead-content h1, #lead2-content h1 {
         font-size: 1.5em
     }
 
