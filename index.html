@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,9 +26,6 @@
     <ul id="menu" class="shadow">
         <li>
             <a href="#about">About</a>
-        </li>
-        <li>
-            <a href="#experience">Experience</a>
         </li>
         <li>
             <a href="#education">Education</a>
@@ -68,19 +65,26 @@
 <div id="about">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h2 class="heading">About Me</h2>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-2">
+                <div id="profile-picture">
+                    <img src="images/profile-pic.png" alt="Profile picture here :(" width=150>
+                </div>
+            </div>
+            <div class="col-md-7">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
-                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
-                    libero. Morbi dapibus porta quam laoreet placerat. Donec
-                    eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et
-                    tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus
-                    pharetra. Vivamus nunc justo, finibus
-                    ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In
-                    consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                    Hello! I am Yingwen, a 2019 graduate of the Cartography M.Sc. Programme of TU Munich, TU Vienna and
+                    TU
+                    Dresden. During my postgraduate time, I focused on cartography, geospatial information
+                    management and geovisualisation. I am passionate about exploring human behavior related geodata and
+                    hoping to work in related projects. I wish to transform data into solutions to daily life problems
+                    and make an positive impact.
+                    <br><br>
+                    I am also interested in spatial data analysis, location-based service as well as web design and
+                    eager to learn more about these topics.
+                    Ultimately, I am always open to new challenges.
                 </p>
             </div>
         </div>
@@ -128,32 +132,24 @@
 <div id="education">
     <h2 class="heading">Education</h2>
     <div class="education-block">
-        <h3>University of Ottawa</h3>
-        <span class="education-date">Sept 2016 - Sept 2017</span>
-        <h4>Bachelor of Science in Computer Science</h4>
+        <h3>Master of Science in Cartography</h3>
+        <span class="education-date">Sept 2017 - Sept 2019</span>
+        <a href="https://cartographymaster.eu/"><h4>Technical Univeristy of Munich (TUM); Technical Univeristy of Vienna
+            (TUW)</h4></a>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
-            urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
-            dapibus porta quam laoreet placerat.
+            Thesis: “Tourists vs. Locals: Mapping Urban Traces from Social Media”
         </p>
     </div>
     <!-- End .education-block -->
 
     <div class="education-block">
-        <h3>University of Ottawa</h3>
-        <span class="education-date">Sept 2016 - Sept 2017</span>
-        <h4>Bachelor of Science in Computer Science</h4>
-        <ul>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-        </ul>
+        <h3>Bachelor of Science in Geographical Science</h3>
+        <span class="education-date">Sept 2013 - June 2017</span>
+        <a href="https://en.whu.edu.cn/"><h4>Wuhan University</h4></a>
+        <p>
+            Thesis: “The Accuracy Assessment of the Rainfall Data Product of TRMM and GPM Satellites based on the
+            Region of Yangtze River”
+        </p>
     </div>
     <!-- End .education-block -->
 </div>
@@ -240,7 +236,7 @@
                         A 3D landscape model created based on the orthophoto of a predefined urban section in Dresden
                         with ArcMap, ArcScene and Blender.
                     </p>
-                    <a href="#">View Project</a>
+                    <a href="dyw-landscape.html">View Project</a>
                 </div>
                 <!-- End .project-info -->
             </div>
@@ -260,7 +256,7 @@
                             between features. It is implemented with ArcPy package.
                             <br>(Collaborator: Peilun Yuan)
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="dyw-parallel.html">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>

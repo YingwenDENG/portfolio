@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DengYingwen: Subject-specific GIS Applications</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<!-- End #mobile-menu-toggle -->
+<header>
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <ul id="menu" class="shadow">
+        <li>
+            <a href="index.html" class="no-scroll">Home</a>
+        </li>
+        <li>
+            <a href="#parallel-intro">Introduction</a>
+        </li>
+        <li>
+            <a href="#parallel-alg">Algorithm</a>
+        </li>
+        <li>
+            <a href="#parallel-output">Output</a>
+        </li>
+    </ul>
+</header>
+<!-- End header -->
+
+<div id="lead" class="parallelLine">
+    <div id="lead2-content">
+        <h1>Subject-specific GIS Applications</h1>
+        <h2>An approach to detect semi-parallel line features</h2>
+        <a href="https://github.com/YingwenDENG/Semi-parallel-lines-detection-tool" class="btn-rounded-white">View on
+            Github</a>
+        <br>
+    </div>
+    <!-- End #lead-content -->
+
+    <div id="lead-overlay"></div>
+
+    <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+    </div>
+    <!-- End #lead-down -->
+</div>
+<!-- End #lead -->
+
+<div id="parallel-intro" class="myproject">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">Introduction</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Design and implement a tool which detects semi
+                    parallel line structures using a pair
+                    wise comparison between features. The program shall break the original line
+                    features into parallel and non parallel sections. And during the comparison process,
+                    certain search distance in meters and tolerance of the parallel angle in degrees will
+                    be assigned.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="parallel-alg" class="myproject background-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">Algorithm</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    The comparison works with breaking the polylines on the nodes in each
+                    polyline. And assign each segments with its vector direction in the XY coordinate system.
+                    Generating the near table of features within the search distance . Filter out the touching
+                    feature pairs. Compare the vect or directions of segments in both polyline by calculating
+                    the angle difference of the directions and select the ones within the angle tolerance and
+                    consider them as semi parallel segment pairs. And to complete the result table with the
+                    non parallel segments, compare with the original segment pairs and add missing IDs in
+                    each polylines with the responding “-1” value.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="parallel-output" class="myproject">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">Output</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    The output attribute table shall fill the detect semi-parallel feature sections with the ID of
+                    segments pairs(as "OBJECTID"), the ID of segments in one polyline as "SegFC_ID" with the ID of its
+                    semi-parallel segments in the other polyline as "SegFC2_ID". For the segments with no semi-parallel
+                    segments, "-1" is given to the missing matching segment ID. Additionally, the semi-parallel segments
+                    are selected and highlighted in the data view.
+                </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <figure>
+                <img src="images/parallel-output.JPG" width="100%" alt="Figure here">
+            </figure>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 copyright">
+                <p>
+                    Copyright &copy; 2020 YINGWEN DENG
+                </p>
+            </div>
+            <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+            </div>
+            <div class="col-sm-5 social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/YingwenDENG" target="_blank"><i class="fa fa-github"
+                                                                                    aria-hidden="true"></i></a>
+                    </li>
+                    <!--                    <li>-->
+                    <!--                        <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"-->
+                    <!--                                                                                aria-hidden="true"></i></a>-->
+                    <!--                    </li>-->
+                    <li>
+                        <a href="https://linkedin.com/in/ying-wen-deng" target="_blank"><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/racheldeng123" target="_blank"><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <!--                    <li>-->
+                    <!--                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+                    <!--                    </li>-->
+                    <!--                    <li>-->
+                    <!--                        <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"-->
+                    <!--                                                                              aria-hidden="true"></i></a>-->
+                    <!--                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
+
+</html>

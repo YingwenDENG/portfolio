@@ -263,9 +263,24 @@ footer {
     height: 60vh;
 }
 
+.runow {
+    background: url("../images/running.jpg");
+    height: 60vh;
+}
+
+.landscape {
+    background: url("../images/dresden.jpg");
+    height: 60vh;
+}
+
 .main-page {
     background: url("../images/maps-changed-world-cholera.jpg");
     height: 100vh;
+}
+
+.parallelLine {
+    background: url("../images/parallel_lines.jpg");
+    height: 60vh;
 }
 
 #lead {
@@ -299,7 +314,7 @@ footer {
     line-height: 0.9em
 }
 
-#lead-content h2 {
+#lead-content h2, #lead2-content h2 {
     color: #a0cfee;
     font-weight: 500;
     font-size: 2.25em;
@@ -622,6 +637,11 @@ footer {
     text-align: center
 }
 
+#profile-picture {
+    display: flex;
+    justify-content: center;
+}
+
 figure {
     display: inline-block;
 }
@@ -828,7 +848,7 @@ figcaption {
         font-size: 3em
     }
 
-    #lead-content h2 {
+    #lead-content h2, #lead2-content h2 {
         font-size: 1.75em
     }
 
@@ -872,7 +892,7 @@ figcaption {
         font-size: 2em
     }
 
-    #lead-content h2 {
+    #lead-content h2, #lead2-content h2 {
         font-size: 1.3em
     }
 
@@ -914,7 +934,7 @@ figcaption {
         font-size: 1.5em
     }
 
-    #lead-content h2 {
+    #lead-content h2, #lead2-content h2 {
         font-size: 1em
     }
 
