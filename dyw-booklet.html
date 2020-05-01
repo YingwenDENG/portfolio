@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DengYingwen: Subject-specific GIS Applications</title>
+    <title>DengYingwen: Booklet Design</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -28,25 +28,19 @@
             <a href="index.html" class="no-scroll">Home</a>
         </li>
         <li>
-            <a href="#parallel-intro">Introduction</a>
+            <a href="#booklet-intro">Introduction</a>
         </li>
         <li>
-            <a href="#parallel-alg">Algorithm</a>
-        </li>
-        <li>
-            <a href="#parallel-output">Output</a>
+            <a href="#product-preview">Preview</a>
         </li>
     </ul>
 </header>
 <!-- End header -->
 
-<div id="lead" class="parallelLine">
+<div id="lead" class="booklet">
     <div id="lead2-content">
-        <h1>Subject-specific GIS Applications</h1>
-        <h2>An approach to detect semi-parallel line features</h2>
-        <br>
-        <a href="https://github.com/YingwenDENG/Semi-parallel-lines-detection-tool" class="btn-rounded-white">View on
-            Github</a>
+        <h1>Booklet Design</h1>
+        <h2>A practice for realizing design concepts for print information products with DTP</h2>
         <br>
     </div>
     <!-- End #lead-content -->
@@ -62,7 +56,7 @@
 </div>
 <!-- End #lead -->
 
-<div id="parallel-intro" class="myproject">
+<div id="booklet-intro" class="myproject">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -70,63 +64,33 @@
             </div>
             <div class="col-md-8">
                 <p>
-                    Design and implement a tool which detects semi
-                    parallel line structures using a pair
-                    wise comparison between features. The program shall break the original line
-                    features into parallel and non parallel sections. And during the comparison process,
-                    certain search distance in meters and tolerance of the parallel angle in degrees will
-                    be assigned.
+                    This is a desktop publishing (DTP) practice for the Geo-Media course. The booklet is specified to
+                    contain eight pages, size 6A, in portrait orientation. The aim of this project is to combine
+                    existing
+                    contents in a layout that looks professional.
+                    <br>
+                    This booklet about the EU history is created in May 2018 based on the contents
+                    on the website: <i>europa.eu</i>. (Some contents might be outdated now)
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-<div id="parallel-alg" class="myproject background-alt">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="heading">Algorithm</h2>
-            </div>
-            <div class="col-md-8">
-                <p>
-                    The comparison works with breaking the polylines on the nodes in each
-                    polyline. And assign each segments with its vector direction in the XY coordinate system.
-                    Generating the near table of features within the search distance . Filter out the touching
-                    feature pairs. Compare the vect or directions of segments in both polyline by calculating
-                    the angle difference of the directions and select the ones within the angle tolerance and
-                    consider them as semi parallel segment pairs. And to complete the result table with the
-                    non parallel segments, compare with the original segment pairs and add missing IDs in
-                    each polylines with the responding “-1” value.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="parallel-output" class="myproject">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="heading">Output</h2>
-            </div>
-            <div class="col-md-8">
-                <p>
-                    The output attribute table shall fill the detect semi-parallel feature sections with the ID of
-                    segments pairs(as "OBJECTID"), the ID of segments in one polyline as "SegFC_ID" with the ID of its
-                    semi-parallel segments in the other polyline as "SegFC2_ID". For the segments with no semi-parallel
-                    segments, "-1" is given to the missing matching segment ID. Additionally, the semi-parallel segments
-                    are selected and highlighted in the data view.
-                </p>
-            </div>
-        </div>
-        <div class="image-container">
-            <figure>
-                <img src="images/parallel-output.JPG" width="100%" alt="Figure here">
-            </figure>
-        </div>
-    </div>
-</div>
 
+<div id="product-preview" class="optional-section">
+    <h2 class="heading">Product Overview</h2>
+    <div class="container">
+
+        <div class="optional-section-block">
+
+            <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fupf699cb" width="100%" height="600"
+                    seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+
+        </div>
+
+    </div>
+</div>
 
 <footer>
     <div class="container">

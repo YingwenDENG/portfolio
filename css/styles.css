@@ -277,6 +277,11 @@ footer {
     height: 60vh;
 }
 
+.booklet {
+    background: url("../images/book.jpg");
+    height: 60vh;
+}
+
 .main-page {
     background: url("../images/maps-changed-world-cholera.jpg");
     height: 100vh;
