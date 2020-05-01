@@ -282,6 +282,11 @@ footer {
     height: 60vh;
 }
 
+.sketchmap {
+    background: url("../images/northern-light.jpg");
+    height: 60vh;
+}
+
 .main-page {
     background: url("../images/maps-changed-world-cholera.jpg");
     height: 100vh;
